@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about page</title>
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+        <!-- script file -->
+        <script src="script.js" defer></script>
+
+<!-- style css -->
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Oswald;
+}
+
+:root {
+    --active-navBar-color : #f36100;
+    --white-color : #fff;
+}
+
+
+/* <!-- section One start --> */
+
+.about-us-page-main {
+    background-image: url(../imgs/breadcrumb-bg.jpg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 370px;
+
+            background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+        }
+
+        .about-us-page-main-head {
+            font-size: 60px;
+            color: #ffffff;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .about-us-page-one-links {
+            display: flex;
+        }
+
+        .about-us-page-one-links span {
+            color: #ffffff;
+            font-size: 16px;
+            margin-right: 15px;
+        }
+
+        .about-us-page-home {
+            font-size: 18px;
+            color: #ffffff;
+            font-weight: 700;
+            margin-right: 15px;
+            text-decoration: none;
+            font-family: 'Muli';
+        }
+
+        .about-us-page-about {
+            font-size: 20px;
+            color: var(--active-navBar-color);
+            font-weight: 700;
+            text-decoration: none;
+            font-family: 'Muli';
+        }
+/* <!-- section One End --> */
+
+
+/* <!-- section Two start --> */
+
+.sec-two {
+    /* background: #212529; */
+    background: #0a0a0a;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.sec-two .choose-us-all-content {
+    max-width: 1440px;
+    width: 88%;
+    margin: 0 auto;
+}
+
+.choose-us-heading {
+    text-align: center;
+}
+
+.choose-us-heading p {
+    font-size: 16px;
+    color: var(--active-navBar-color);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.choose-us-subheading {
+    color: var(--white-color);
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.chose-us-all-cards {
+    display: flex;
+    margin-top: 35px;
+}
+
+.chose-us-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 316px;
+    width: 100%;
+    padding: 20px;
+}
+
+.choose-us-icon {
+    width: 90px;
+    height: 90px;
+    background: #212429;
+    border-radius: 50%;
+    align-content: center;
+    align-self: center;
+    transition: all .3s;
+}
+
+.chose-us-card:hover .choose-us-icon{
+    color: var(--white-color);
+    background-color: var(--active-navBar-color);
+}
+
+.chose-us-card:hover .choose-us-icon i {
+    color: var(--white-color);
+}
+
+
+.choose-us-icon i {
+    font-size: 40px;
+    color: var(--active-navBar-color);
+}
+
+.choose-card-title {
+    color: var(--white-color);
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 22px;
+}
+
+.chose-us-card-text {
+    color: #A9A9A9;
+}
+
+/* <!-- section Two end --> */
+
+
+/*     <!-- section Three Start --> */
+
+.about-us-we-done-sec {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    background: #0a0a0a;
+    display: flex;
+}
+
+.about-us-bg-img {
+    background-image: url('../imgs/about-us.jpg');
+    height: 640px;
+    width: 50%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.about-us-bg-img-front {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.about-us-bg-img-front i {
+    color: var(--active-navBar-color);
+    background: var(--white-color);
+    font-size: 80px;
+    border-radius: 50%;
+}
+
+.about-us-have-done-text {
+    width: 50%;
+    height: 640px;
+    padding: 120px 70px 0 70px;
+}
+
+.about-us-have-done-title {
+    color: var(--active-navBar-color);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.about-us-have-done-sub-title {
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+
+.about-us-have-done-inner-text {
+    font-size: 14px;
+    font-family: "Muli", sans-serif;
+    color: #a9a9a9;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 30px 0;
+    width: 515px;
+}
+
+.about-us-bar-item {
+    margin-bottom: 34px;
+}
+
+.about-us-bar-heading {
+    color: #ffffff;
+    margin-bottom: 13px;
+}
+
+.about-us-bar-inside {
+    background: #2d2d2d;
+    height: 5px;
+    border: none;
+    margin-bottom: 0;
+}
+
+.about-us-bar-inside .about-us-bar-inside-width-one {
+    display: block;
+    height: 100%;
+    background: #333;
+    background: rgb(255, 255, 255);
+    width: 427.6px;
+}
+
+.about-us-bar-percentage {
+    font-size: 14px;
+    color: #ffffff;
+    float: right;
+    margin-top: -40px;
+}
+
+.about-us-bar-inside .about-us-bar-inside-width-two {
+    display: block;
+    height: 100%;
+    background: #333;
+    background: rgb(255, 255, 255);
+    width: 454.325px;
+}
+
+.about-us-bar-inside .about-us-bar-inside-width-three {
+    display: block;
+    height: 100%;
+    background: #333;
+    background: rgb(255, 255, 255);
+    width: 400.875px;
+}
+
+
+/*     <!-- section Three End --> */
+
+    /* <!-- section seven start --> */
+
+    .section-seven {
+        background: #151515;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .section-seven .our-team-all-content{
+            max-width: 1440px;
+            width: 88%;
+            margin: 0 auto;
+    }
+    
+    .our-team-header {
+        /* text-align: center; */
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    
+    .our-team-header p {
+        font-size: 16px;
+        color: var(--active-navBar-color);
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+        
+    .our-team-subheading {
+        color: var(--white-color);
+        font-size: 32px;
+        text-transform: uppercase;
+    }
+    
+    .our-team-header-button button {
+        border: 2px solid #f36100;
+        font-size: 14px;
+        padding: 17px 30px 16px;
+        color: var(--white-color);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 700;
+        transition: all 0.3s;
+        background: transparent;
+        cursor: pointer;
+    }
+    
+    .our-team-header-button button:hover {
+        background: var(--active-navBar-color);
+    }
+    
+    .our-team-carousel {
+        /* height: 20rem; */
+        /* width: 100%; */
+    
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .our-team-img-card {
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        /* flex-wrap: wrap; */
+    }
+    
+    .our-team-img-card img {
+        width: 400px;
+        height: 450px;
+    
+        position: relative;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    
+        /* <!-- section seven end --> */
+    
+
+/* <!-- section Four start --> */
+
+.banner-section {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(../imgs/banner-bg.jpg);
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-section h2{
+    font-size: 48px;
+    color: var(--white-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.banner-section p {
+        font-size: 20px;
+        color: #c4c4c4;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 45px;
+}
+
+.banner-section button {
+    border: 2px solid #f36100;
+    font-size: 14px;
+    padding: 17px 30px 16px;
+    color: var(--white-color);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 0.3s;
+    background: transparent;
+    cursor: pointer;
+}
+
+.banner-section button:hover {
+    background: var(--active-navBar-color);
+}
+
+/* <!-- section Four end --> */
+
+
+/* <!-- section testimonial start --> */
+
+.about-us-testimonial-section {
+    background: #151515;
+    padding-bottom: 80px;
+}
+
+.about-us-testimonial-width {
+    max-width: 1440px;
+    width: 88%;
+    margin: 0 auto;
+}
+
+.about-us-testimonial-heading {
+    text-align: center;
+    padding-bottom: 40px;
+} 
+
+.about-us-testimonial-title {
+    font-size: 16px;
+    color: var(--active-navBar-color);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.about-us-testimonial-subtitle {
+    color: var(--white-color);
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.about-us-testimonial-box {
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+.about-us-client-img {
+    /* text-align: center; */
+}
+
+.about-us-client-img img {
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+p.about-us-client-feedback {
+    width: 675px;
+    /* text-align: center; */
+    margin: 0% auto;
+    color: #fefefe;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-family: 'Muli';
+    line-height: 1.5;
+}
+
+.about-us-client-name {
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.about-us-client-stars i{
+    font-size: 12px;
+    color: #d49d09;
+}
+
+/* <!-- section testimonial end --> */
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- header start  -->
+    <header id="main-header"></header>
+    <!-- header End  -->
+
+    <!-- section One start -->
+    <section class="about-us-page-main aboutpage-banner-class" id="homepage-banner">
+        <h2 class="about-us-page-main-head">About us</h2>
+        <p class="about-us-page-one-links">
+            <a class="about-us-page-home" href="#">Home</a>
+            <span>></span>
+            <a class="about-us-page-about" href="#">about</a>
+        </p>
+    </section>
+    <!-- section One End -->
+
+
+    <!-- section Two start -->
+
+    <section class="choose-us-sec sec-two">
+        <div class="choose-us-all-content">
+            <div class="choose-us-heading">
+                <p>Why choose us?</p>
+                <h2 class="choose-us-subheading">PUSH YOUR LIMITS FORWARD</h2>
+            </div>
+
+            <div class="chose-us-all-cards">
+                <div class="chose-us-card">
+                    <div class="choose-us-icon">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+                    <h3 class="choose-card-title">Modern equipment</h3>
+                    <p class="chose-us-card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut dolore facilisis.
+                    </p>
+                </div>
+
+                <div class="chose-us-card">
+                    <div class="choose-us-icon">
+                        <i class="fa-solid fa-person-breastfeeding"></i>
+                    </div>
+                    <h3 class="choose-card-title">Healthy nutrition plan</h3>
+                    <p class="chose-us-card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut dolore facilisis.
+                    </p>
+                </div>
+
+                <div class="chose-us-card">
+                    <div class="choose-us-icon">
+                        <i class="fa-solid fa-bowl-food"></i>
+                    </div>
+                    <h3 class="choose-card-title">Proffesponal training plan</h3>
+                    <p class="chose-us-card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut dolore facilisis.
+                    </p>
+                </div>
+
+                <div class="chose-us-card">
+                    <div class="choose-us-icon">
+                        <i class="fa-brands fa-staylinked"></i>
+                    </div>
+                    <h3 class="choose-card-title">Unique to your needs</h3>
+                    <p class="chose-us-card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut dolore facilisis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section Two end -->
+
+    <!-- section Three Start -->
+
+    <section class="about-us-we-done-sec">
+        <div class="about-us-bg-img">
+            <div class="about-us-bg-img-front">
+                <i class="fa-solid fa-circle-play"></i>
+            </div>
+        </div>
+        <div class="about-us-have-done-text">
+            <p class="about-us-have-done-title">about us</p>
+            <h2 class="about-us-have-done-sub-title">What we have done</h2>
+            <p class="about-us-have-done-inner-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                Risus commodo viverra maecenas accumsan lacus vel facilisis. aliquip ex ea commodo consequat sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor.</p>
+
+            <div class="about-us-have-done-bar">
+                <div class="about-us-bar-item">
+                    <p class="about-us-bar-heading">Body building</p>
+                    <div class="about-us-bar-inside">
+                        <span class="about-us-bar-inside-width-one"></span>
+                        <div class="about-us-bar-percentage">80%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-us-have-done-bar">
+                <div class="about-us-bar-item">
+                    <p class="about-us-bar-heading">Training</p>
+                    <div class="about-us-bar-inside">
+                        <span class="about-us-bar-inside-width-two"></span>
+                        <div class="about-us-bar-percentage">85%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-us-have-done-bar">
+                <div class="about-us-bar-item">
+                    <p class="about-us-bar-heading">Fitness</p>
+                    <div class="about-us-bar-inside">
+                        <span class="about-us-bar-inside-width-three"></span>
+                        <div class="about-us-bar-percentage">75%</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- section Three End -->
+
+    <!-- section seven start -->
+
+    <section class="section-seven our-team-section">
+        <div class="our-team-all-content">
+            <div class="our-team-header">
+                <div class="our-team-header-text">
+                    <p>Our Team</p>
+                    <h2 class="our-team-subheading">TRAIN WITH EXPERTS</h2>
+                </div>
+                <div class="our-team-header-button">
+                    <button>Appointment</button>
+                </div>
+            </div>
+
+            <div class="our-team-carousel">
+                <div class="our-team-img-card">
+                    <div class="our-team-carousel-item">
+                        <img src="../imgs/team-1.jpg" alt="" />
+                    </div>
+                    <div class="our-team-carousel-item">
+                        <img src="../imgs/team-2.jpg" alt="" />
+                    </div>
+                    <div class="our-team-carousel-item">
+                        <img src="../imgs/team-3.jpg" alt="" />
+                    </div>
+                    <div class="our-team-carousel-item">
+                        <img src="../imgs/team-4.jpg" alt="" />
+                    </div>
+                    <div class="our-team-carousel-item">
+                        <img src="../imgs/team-5.jpg" alt="" />
+                    </div>
+                    <div class="our-team-carousel-item">
+                        <img src="../imgs/team-6.jpg" alt="" />
+                    </div>
+                </div>
+                <!-- <div class="our-team-carousel-dots">
+                    <span class="our-team-dot our-team-active"></span>
+                    <span class="our-team-dot"></span>
+                    <span class="our-team-dot"></span>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- section seven end -->
+
+    <!-- section testimonial start -->
+
+    <section class="about-us-testimonial-section">
+        <div class="about-us-testimonial-width">
+            <div class="about-us-testimonial-card">
+                <div class="about-us-testimonial-heading">
+                    <h6 class="about-us-testimonial-title">Testimonial</h6>
+                    <h2 class="about-us-testimonial-subtitle">Our cilent say</h2>
+                </div>
+                <div class="about-us-testimonial-box">
+                    <div class="about-us-client-img">
+                        <img src="../imgs/testimonial-1.jpg" alt="">
+                        <p class="about-us-client-feedback">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                                    gravida. Risus commodo
+                                    viverra maecenas accumsan lacus vel facilisis.
+                        </p>
+                        <h4 class="about-us-client-name">Marshmello Gomez</h4>
+                        <div class="about-us-client-stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section testimonial end -->
+
+    <!-- footer start -->
+    <footer id="main-footer"></footer>
+    <!-- footer end -->
+
+</body>
+
+</html>

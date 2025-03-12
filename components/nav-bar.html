@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- style css -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Oswald;
+        }
+
+        :root {
+            --active-navBar-color: #f36100;
+            --white-color: #fff;
+        }
+
+        header.nav-bar-header {
+            background: #040000;
+            height: 100px;
+            max-width: 1440px;
+            width: 100%;
+            margin: 0 auto;
+            align-content: center;
+        }
+
+        header .nav-bar {
+            display: flex;
+            max-width: 1440px;
+            width: 95%;
+            margin: 0 auto;
+            /* padding-top: 55px; */
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-bar .nav-bar-elements .nav-bar-main-ul {
+            display: flex;
+            width: 650px;
+            justify-content: space-between;
+            list-style-type: none;
+        }
+
+        .nav-bar .nav-bar-elements .nav-bar-main-ul li a {
+            text-decoration: none;
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: var(--white-color) !important;
+            position: relative;
+            transition: all .4s;
+        }
+
+        .nav-bar-elements .nav-bar-main-ul li a:hover {
+            color: var(--active-navBar-color) !important;
+        }
+
+        .nav-bar-elements .nav-bar-main-ul li a::after {
+            color: #f36100;
+            position: absolute;
+            left: 0;
+            top: 13px;
+            height: 2px;
+            width: 100%;
+            background: #f36100;
+            content: "";
+            opacity: 0;
+            transition: all 0.3s;
+            transform: rotate(-20deg);
+        }
+
+        .nav-bar-elements .nav-bar-main-ul li a.active::after {
+            opacity: 1;
+            color: #f36100 !important;
+        }
+
+        .nav-bar-elements .nav-bar-main-ul li a.active:hover::after {
+            opacity: 1;
+        }
+
+        .nav-bar-elements .nav-bar-main-ul li a.active {
+            position: relative;
+            color: #f36100 !important;
+        }
+
+        .nav-bar .nav-bar-icons {
+            max-width: 140px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-bar .nav-bar-icons span a {
+            color: var(--white-color);
+            font-size: 14px;
+        }
+
+        .pages-li-item {
+            position: relative;
+        }
+
+        .pages-li-ul-dropdown {
+            background: rgb(37, 37, 37);
+            position: absolute;
+            left: -40px;
+            top: 40px;
+            width: 180px;
+            /* z-index: 99; */
+            /* text-align: left; */
+            opacity: 0;
+            visibility: hidden;
+            padding: 13px 25px 20px;
+            transition: 0.3s;
+            list-style-type: none;
+            line-height: 2;
+
+        }
+
+        .pages-li-ul-dropdown li a {
+            font-size: 15px !important;
+            text-transform: capitalize !important;
+            font-weight: 400 !important;
+        }
+
+        .pages-li-item:hover .pages-li-ul-dropdown {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- navbar start -->
+
+    <header id="main-header" class="nav-bar-header">
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="../imgs/logo.png" alt="logo" />
+            </div>
+
+            <div class="nav-bar-elements">
+                <ul class="nav-bar-main-ul">
+                    <li><a class="main-nav-link" href="index.html">Home</a></li>
+                    <li><a class="main-nav-link" href="about.html" class="">About us</a></li>
+                    <li><a class="main-nav-link" href="classes.html" class="">Classes</a></li>
+                    <li><a class="main-nav-link" href="services.html">Services</a></li>
+                    <li><a class="main-nav-link" href="our-team.html">Our team</a></li>
+                    <li class="pages-li-item">
+                        <a href="">Pages</a>
+                        <ul class="pages-li-ul-dropdown">
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="classes.html">Classes TimeTable</a></li>
+                            <li><a href="">BMI Calculate</a></li>
+                            <li><a href="our-team.html">Our Team</a></li>
+                            <li><a href="">Gallery</a></li>
+                            <li><a href="">Our Blog</a></li>
+                            <li><a href="">404</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="main-nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-bar-icons">
+                <span><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></span>
+                <span><a href="#"><i class="fa-brands fa-facebook-f"></i></a></span>
+                <span><a href="#"><i class="fa-brands fa-twitter"></i></a></span>
+                <span><a href="#"><i class="fa-brands fa-youtube"></i></a></span>
+                <span><a href="#"><i class="fa-brands fa-instagram"></i></a></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- navbar end -->
+
+</body>
+
+</html>

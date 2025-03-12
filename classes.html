@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classes page</title>
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- script file -->
+    <script src="script.js" defer></script>
+
+    <!-- style css -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Oswald;
+        }
+
+        :root {
+            --active-navBar-color: #f36100;
+            --white-color: #fff;
+        }
+
+        /* <!-- about section one start --> */
+
+        .about-us-page-main {
+            background-image: url(../imgs/breadcrumb-bg.jpg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 370px;
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top center;
+        }
+
+        .about-us-page-main-head {
+            font-size: 60px;
+            color: #ffffff;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .about-us-page-one-links {
+            display: flex;
+        }
+
+        .about-us-page-one-links span {
+            color: #ffffff;
+            font-size: 16px;
+            margin-right: 15px;
+        }
+
+        .about-us-page-home {
+            font-size: 18px;
+            color: #ffffff;
+            font-weight: 700;
+            margin-right: 15px;
+            text-decoration: none;
+            font-family: 'Muli';
+        }
+
+        .about-us-page-about {
+            font-size: 20px;
+            color: var(--active-navBar-color);
+            font-weight: 700;
+            text-decoration: none;
+            font-family: 'Muli';
+        }
+
+        /* <!-- about section one end --> */
+
+
+        /* <!-- classes page all details start --> */
+
+        .classes-page-all-details {
+            background: #151515;
+            padding-bottom: 60px;
+            padding-top: 60px;
+        }
+
+        .classes-page-all-width {
+            max-width: 1440px;
+            width: 88%;
+            margin: 0% auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .classes-page-left-part {
+            max-width: 766.4px;
+            width: 100%;
+            /* background-color: red; */
+            /* height: 20vh; */
+        }
+
+        .classes-page-gym-trainer-card {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .classes-page-class-img {
+            /* height: 750px;
+    width: 500px; */
+            margin-bottom: 45px;
+        }
+
+        .classes-page-gym-trainer-text {
+            width: 100%;
+            padding-left: 30px;
+        }
+
+        .classes-page-gym-trainer-heading {
+            display: flex;
+            justify-content: space-between;
+            align-self: flex-start;
+            width: 100%;
+            align-items: center;
+        }
+
+        .classes-page-left-heading {
+            color: #ffffff;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 28px;
+            font-size: 30px;
+        }
+
+        .classes-page-left-subheading {
+            font-size: 14px;
+            font-family: "Muli", sans-serif;
+            color: #a9a9a9;
+            font-weight: 400;
+            line-height: 24px;
+            margin: 0 0 15px 0;
+        }
+
+        .classes-page-gym-trainer-name {
+            font-size: 24px;
+            color: #ffffff;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .classes-page-gym-trainer-profession {
+            font-size: 15px;
+            color: #aaaaaa;
+            text-transform: uppercase;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .classes-page-gym-trainer-c-links a i {
+            font-size: 13px;
+            color: #c4c4c4;
+            margin-right: 8px;
+        }
+
+        .classes-page-trainer-about {
+            margin-bottom: 15px;
+            margin-top: 15px;
+            font-size: 14px;
+            font-family: "Muli", sans-serif;
+            color: #c4c4c4;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        .classes-page-trainer-details {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+
+        .classes-page-trainer-age {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #252525;
+            margin-bottom: 10px;
+        }
+
+        .c-p-t-a-t {
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .c-p-t-a-n {
+            font-size: 14px;
+            color: #c4c4c4;
+            width: 150px;
+            font-weight: 200;
+        }
+
+        .classes-page-right-part {
+            max-width: 350px;
+            width: 100%;
+            padding-left: 20px;
+        }
+
+        .classes-page-r-p-heading {
+            font-size: 20px;
+            color: #ffffff;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+
+        .classes-page-category {
+            width: 100%;
+            padding-bottom: 15px;
+        }
+
+        .classes-page-category a {
+            display: flex;
+            justify-content: space-between;
+            text-decoration: none;
+            font-size: 16px;
+            color: #c4c4c4;
+            line-height: 40px;
+            font-weight: 200;
+            transition: all 0.3s;
+        }
+
+        .classes-page-category a:hover .classes-page-category-name {
+            color: var(--active-navBar-color);
+            /* font-weight: 400; */
+        }
+
+
+        .classes-page-category a:hover .classes-page-category-num {
+            color: var(--white-color);
+            font-weight: 400;
+        }
+
+        .classes-page-latest-post {
+            background-image: url(../imgs/latest-1.jpg);
+            width: 335px;
+            height: 200px;
+            padding: 30px 40px 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .classes-page-latest-post h4 {
+            color: #ffffff;
+            font-weight: 600;
+            line-height: 23px;
+            display: flex;
+        }
+
+        .classes-page-latest-post p span {
+            font-size: 12px;
+            color: #888888;
+            margin-right: 25px;
+        }
+
+        .classes-page-latest-small-post {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .classes-page-small-post-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 61%;
+        }
+
+        .classes-page-small-post-text h6 a {
+            text-decoration: none;
+            font-size: 15px;
+            color: #ffffff;
+            line-height: 21px;
+        }
+
+        .classes-page-small-post-text p {
+            font-size: 12px;
+            color: #888888;
+            font-weight: 200;
+        }
+
+        .classes-page-latest-sidebar-banner {
+            background-image: url(../imgs/sidebar-banner.jpg);
+            height: 300px;
+            width: 300px;
+            margin-top: 60px;
+            display: flex;
+            align-items: end;
+        }
+
+        .classes-page-latest-sidebar-banner p {
+            font-size: 20px;
+            font-weight: 600;
+            color: #ffffff;
+            text-transform: uppercase;
+            padding: 30px 30px;
+        }
+
+        /* <!-- classes page all details end --> */
+
+
+        /* <!-- classes timetable section start --> */
+
+        .classes-timetable-section {
+            background: #151515;
+            padding-bottom: 60px;
+            padding-top: 60px;
+        }
+
+        .classes-timetable-section-width {
+            max-width: 1440px;
+            width: 88%;
+            margin: 0 auto;
+        }
+
+        .classes-timetable-section-width h3 {
+            font-size: 20px;
+            color: #ffffff;
+            font-weight: 600;
+            margin-bottom: 35px;
+        }
+
+
+        .classes-timetable-box table {
+            border: 1px solid #363636;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        .classes-timetable-box table thead {
+            border-bottom: 1px solid #363636;
+        }
+
+        .classes-timetable-box table thead tr th {
+            font-size: 14px;
+            color: #ffffff;
+            background: #f36100;
+            border-right: 1px solid #363636;
+            padding: 15px 0;
+            font-weight: 400;
+        }
+
+        .classes-timetable-box table tbody tr td {
+            width: 146px;
+            padding: 35px 0;
+        }
+
+        tr td.class-time {
+            font-size: 12px;
+            color: #f36100;
+            background: #000000;
+            border: 1px solid #363636;
+        }
+
+        .m-d-data-one-color-dark {
+            background: #0a0a0a;
+        }
+
+        .m-d-data-one:hover h5,
+        .m-d-data-one:hover p {
+            color: #c4c4c4;
+        }
+
+        .m-d-data-one h5 {
+            color: #ffffff1a;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-size: 18px;
+            transition: all 0.4s;
+        }
+        
+        .m-d-data-one p {
+            font-size: 12px;
+            color: #363636;
+            transition: all 0.4s;
+        }
+
+        .m-d-blank-data {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .m-d-blank-data::after {
+            position: absolute;
+            left: -43px;
+            top: 59px;
+            width: 237px;
+            height: 1px;
+            background: #363636;
+            content: "";
+            transform: rotate(-40deg);
+        }
+
+        /* <!-- classes timetable section end --> */
+    </style>
+
+</head>
+
+<body>
+
+    <!-- header start  -->
+    <header id="main-header"></header>
+    <!-- header End  -->
+
+    <!-- section One start -->
+    <section class="about-us-page-main aboutpage-banner-class" id="homepage-banner">
+        <h2 class="about-us-page-main-head">Classes detail</h2>
+        <p class="about-us-page-one-links">
+            <a class="about-us-page-home" href="#">Home</a>
+            <span>></span>
+            <a class="about-us-page-home" href="#">Classes</a>
+            <span>></span>
+            <a class="about-us-page-about" href="#">Body Building</a>
+        </p>
+    </section>
+    <!-- section One End -->
+
+    <!-- classes page all details start -->
+    <section class="classes-page-all-details">
+
+        <div class="classes-page-all-width">
+
+            <div class="classes-page-left-part">
+                <img class="classes-page-class-img" src="../imgs/class-detailsl.jpg" alt="">
+                <h2 class="classes-page-left-heading">Body buiding</h2>
+                <p class="classes-page-left-subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure Lorem ipsum
+                    dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua accusantium doloremque laudantium. Excepteur sint occaecat cupidatat non proident
+                    sculpa.</p>
+
+                <h2 class="classes-page-left-heading">Trainer</h2>
+                <p class="classes-page-left-subheading">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur officia deserunt
+                    mollit.</p>
+
+                <div class="classes-page-gym-trainer-card">
+                    <img src="../imgs/trainer-profile.jpg" alt="">
+                    <div class="classes-page-gym-trainer-text">
+                        <div class="classes-page-gym-trainer-heading">
+                            <div class="classes-page-gym-trainer-heading-text">
+                                <h3 class="classes-page-gym-trainer-name">Athart Rachel</h3>
+                                <p class="classes-page-gym-trainer-profession">Gym Trainer</p>
+                            </div>
+                            <div class="classes-page-gym-trainer-c-links">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <p class="classes-page-trainer-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua viverra maecenas lacus vel
+                            facilisis.</p>
+                        <div class="classes-page-trainer-details">
+                            <div class="classes-page-trainer-age">
+                                <span class="c-p-t-a-t">Age</span> <span class="c-p-t-a-n">35</span>
+                            </div>
+                            <div class="classes-page-trainer-age">
+                                <span class="c-p-t-a-t">Weight</span> <span class="c-p-t-a-n">148lbs</span>
+                            </div>
+                            <div class="classes-page-trainer-age">
+                                <span class="c-p-t-a-t">Height</span> <span class="c-p-t-a-n">10' `2`</span>
+                            </div>
+                            <div class="classes-page-trainer-age">
+                                <span class="c-p-t-a-t">Occupation</span> <span class="c-p-t-a-n">no-founder</span>
+                            </div>
+                        </div>
+                        <p class="classes-page-trainer-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua viverra maecenas lacus vel
+                            facilisis.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="classes-page-right-part">
+                <p class="classes-page-r-p-heading">Categories</p>
+                <div class="classes-page-all-categories">
+                    <div class="classes-page-category">
+                        <a href="#"><span class="classes-page-category-name">Yoga</span> <span
+                                class="classes-page-category-num">12</span></a>
+                        <a href="#"><span class="classes-page-category-name">Runing</span> <span
+                                class="classes-page-category-num">32</span></a>
+                        <a href="#"><span class="classes-page-category-name">Weightloss</span> <span
+                                class="classes-page-category-num">86</span></a>
+                        <a href="#"><span class="classes-page-category-name">Cario</span> <span
+                                class="classes-page-category-num">25</span></a>
+                        <a href="#"><span class="classes-page-category-name">Body buiding</span> <span
+                                class="classes-page-category-num">36</span></a>
+                        <a href="#"><span class="classes-page-category-name">Nutrition</span> <span
+                                class="classes-page-category-num">15</span></a>
+                    </div>
+                </div>
+                <p class="classes-page-r-p-heading">Latest posts</p>
+                <div class="classes-page-latest-post">
+                    <h4>This Japanese Way of Making Iced Coffee Is a Game...</h4>
+                    <p><span>Aug 20, 2019</span> <span>|</span> <span>20 Comment</span></p>
+                </div>
+                <div class="classes-page-latest-small-post">
+                    <img src="../imgs/latest-2.jpg" alt="">
+                    <div class="classes-page-small-post-text">
+                        <h6>
+                            <a href="#">Grilled Potato and Green Bean Salad</a>
+                        </h6>
+                        <p>Aug 15, 2019</p>
+                    </div>
+                </div>
+
+                <div class="classes-page-latest-small-post">
+                    <img src="../imgs/latest-3.jpg" alt="">
+                    <div class="classes-page-small-post-text">
+                        <h6>
+                            <a href="#">The $8 French Rosé I Buy in Bulk Every Summer</a>
+                        </h6>
+                        <p>Aug 15, 2019</p>
+                    </div>
+                </div>
+
+                <div class="classes-page-latest-small-post">
+                    <img src="../imgs/latest-2.jpg" alt="">
+                    <div class="classes-page-small-post-text">
+                        <h6>
+                            <a href="#">Ina Garten's Skillet-Roasted Lemon Chicken</a>
+                        </h6>
+                        <p>Aug 15, 2019</p>
+                    </div>
+                </div>
+
+                <div class="classes-page-latest-small-post">
+                    <img src="../imgs/latest-2.jpg" alt="">
+                    <div class="classes-page-small-post-text">
+                        <h6>
+                            <a href="#">The Best Weeknight Baked Potatoes, 3 Creative Ways</a>
+                        </h6>
+                        <p>Aug 15, 2019</p>
+                    </div>
+                </div>
+
+                <div class="classes-page-latest-sidebar-banner">
+                    <p>Banner 300x300</p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+    <!-- classes page all details end -->
+
+    <!-- classes timetable section start -->
+    <section class="classes-timetable-section">
+        <div class="classes-timetable-section-width">
+            <h3>Classes timetable</h3>
+            <div class="classes-timetable-box">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                            <th>Sunday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="class-time">6.00am - 8.00am</td>
+                            <td class="m-d-data-one m-d-data-one-color-dark">
+                                <h5>WEIGHT LOOSE</h5>
+                                <p>RLefew D. Loee</p>
+                            </td>
+
+                            <td class="m-d-data-one m-d-data-one-color-light">
+                                <h5>Cardio</h5>
+                                <p>RLefew D. Loee</p>
+                            </td>
+
+                            <td class="m-d-data-one m-d-data-one-color-dark">
+                                <h5>Yoga</h5>
+                                <p>Keaf Shen</p>
+                            </td>
+
+                            <td class="m-d-data-one">
+                                <h5>Fitness</h5>
+                                <p>Kimberly Stone</p>
+                            </td>
+
+                            <td class="m-d-data-one m-d-blank-data m-d-data-one-color-dark">
+
+                            </td>
+
+                            <td class="m-d-data-one">
+                                <h5>Boxing</h5>
+                                <p>Rachel Adam</p>
+                            </td>
+
+                            <td class="m-d-data-one m-d-data-one-color-dark">
+                                <h5>Body Building</h5>
+                                <p>Robert Cage</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="class-time">10.00am - 12.00am</td>
+                            <td class="m-d-data-one m-d-blank-data"></td>
+
+                            <td class="m-d-data-one m-d-data-one-color-dark">
+                                <h5>Fitness</h5>
+                                <p>Kimberly Stone</p>
+                            </td>
+
+                            <td class="m-d-data-one">
+                                <h5>WEIGHT LOOSE</h5>
+                                <p>RLefew D. Loee</p>
+                            </td>
+
+                            <td class="m-d-data-one m-d-data-one-color-dark">
+                                <h5>Cardio</h5>
+                                <p>RLefew D. Loee</p>
+                            </td>
+
+                            <td class="m-d-data-one">
+                                <h5>Body Building</h5>
+                                <p>Robert Cage</p>
+                            </td>
+
+                            <td class="m-d-data-one m-d-data-one-color-dark">
+                                <h5>Karate</h5>
+                                <p>Donald Grey</p>
+                            </td>
+
+                            <td class="m-d-data-one m-d-blank-data"></td>
+                        </tr>
+                        <tr>
+                            <td class="class-time">5.00pm - 7.00pm</td>
+                            <td class="m-d-data-one m-d-data-one-color-dark">
+                                <h5>Boxing</h5>
+                                <p>Rachel Adam</p>
+                            </td>
+                            <td class="m-d-data-one m-d-data-one-color-light">
+                                <h5>Karate</h5>
+                                <p>Donald Grey</p>
+                            </td>
+                            <td class="m-d-data-one m-d-data-one-color-dark">
+                                <h5>Body Building</h5>
+                                <p>Robert Cage</p>
+                            </td>
+                            <td class="m-d-data-one m-d-blank-data"></td>
+                            <td class="m-d-data-one m-d-data-one-color-dark">
+                                <h5>Yoga</h5>
+                                <p>Keaf Shen</p>
+                            </td>
+                            <td class="m-d-data-one">
+                                <h5>Cardio</h5>
+                                <p>RLefew D. Loee</p>
+                            </td>
+                            <td class="m-d-data-one m-d-data-one-color-dark">
+                                <h5>Fitness</h5>
+                                <p>Kimberly Stone</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="class-time">7.00pm - 9.00pm</td>
+                            <td class="m-d-data-one">
+                                <h5>Cardio</h5>
+                                <p>RLefew D. Loee</p>
+                            </td>
+                            <td class="m-d-data-one m-d-data-one-color-dark m-d-blank-data"></td>
+                            <td class="m-d-data-one">
+                                <h5>Boxing</h5>
+                                <p>Rachel Adam</p>
+                            </td>
+                            <td class="m-d-data-one m-d-data-one-color-dark">
+                                <h5>Yoga</h5>
+                                <p>Keaf Shen</p>
+                            </td>
+                            <td class="m-d-data-one">
+                                <h5>Karate</h5>
+                                <p>Donald Grey</p>
+                            </td>
+                            <td class="m-d-data-one m-d-data-one-color-dark">
+                                <h5>Boxing</h5>
+                                <p>Rachel Adam</p>
+                            </td>
+                            <td class="m-d-data-one">
+                                <h5>WEIGHT LOOSE</h5>
+                                <p>RLefew D. Loee</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- classes timetable section end -->
+
+
+    <!-- footer start -->
+    <footer id="main-footer"></footer>
+    <!-- footer end -->
+
+</body>
+
+</html>

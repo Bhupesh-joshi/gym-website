@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact-page</title>
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- script file -->
+    <script src="script.js" defer></script>
+
+    <!-- style css -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Oswald;
+        }
+
+        :root {
+            --active-navBar-color: #f36100;
+            --white-color: #fff;
+        }
+
+        /* <!-- section One start --> */
+
+        .about-us-page-main {
+            background-image: url(../imgs/breadcrumb-bg.jpg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 370px;
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top center;
+        }
+
+        .about-us-page-main-head {
+            font-size: 60px;
+            color: #ffffff;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .about-us-page-one-links {
+            display: flex;
+        }
+
+        .about-us-page-one-links span {
+            color: #ffffff;
+            font-size: 16px;
+            margin-right: 15px;
+        }
+
+        .about-us-page-home {
+            font-size: 18px;
+            color: #ffffff;
+            font-weight: 700;
+            margin-right: 15px;
+            text-decoration: none;
+            font-family: 'Muli';
+        }
+
+        .about-us-page-about {
+            font-size: 20px;
+            color: var(--active-navBar-color);
+            font-weight: 700;
+            text-decoration: none;
+            font-family: 'Muli';
+        }
+
+        /* <!-- section One End --> */
+
+
+        /* contact-us-page-section start */
+
+        .contact-us-page-section {
+            background: #151515;
+        }
+
+        .contact-us-page-width {
+            max-width: 1440px;
+            width: 88%;
+            margin: 0% auto;
+            padding-top: 100px;
+            padding-bottom: 60px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .contact-us-page-get-in-touch {
+            width: 40%;
+        }
+
+        .contact-get-in-touch-heading {
+            margin-bottom: 35px;
+        }
+
+        .contact-get-in-touch-heading p {
+            font-size: 16px;
+            color: var(--active-navBar-color);
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .contact-get-in-touch-heading h2 {
+            color: var(--white-color);
+            font-size: 32px;
+            text-transform: uppercase;
+        }
+
+        .contact-location-details-inside {
+            display: flex;
+            align-items: center;
+            margin-bottom: 35px;
+        }
+
+        .contact-location-details-inside p {
+            font-size: 16px;
+            color: #c4c4c4;
+            width: 220px;
+            font-weight: 300;
+        }
+
+        .contact-location-details-inside p span {
+            margin-right: 5px;
+        }
+
+        .contact-location-icon {
+            width: 73px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #363636;
+            border-radius: 50%;
+            color: var(--white-color);
+            margin-right: 20px;
+        }
+
+        .contact-location-icon i {
+            font-size: 30px;
+            color: #f36100;
+        }
+
+
+
+        .contact-us-page-form {
+            width: 50%;
+        }
+
+        .contact-us-page-form form input {
+            font-size: 16px;
+            color: #c4c4c4;
+            width: 100%;
+            height: 46px;
+            border: 1px solid #363636;
+            padding-left: 20px;
+            background: transparent;
+            margin-bottom: 20px;
+            outline: none;
+        }
+
+        .contact-us-page-form form input::placeholder {
+            color: #c4c4c4;
+            font-weight: 300;
+        }
+
+        .contact-us-page-form form textarea::placeholder {
+            color: #c4c4c4;
+            font-weight: 300;
+        }
+
+        .contact-us-page-form form textarea {
+            font-size: 16px;
+            color: #c4c4c4;
+            width: 100%;
+            height: 100px;
+            border: 1px solid #363636;
+            padding-left: 20px;
+            padding-top: 12px;
+            background: transparent;
+            margin-bottom: 14px;
+            resize: none;
+            outline: none;
+        }
+
+        .contact-us-page-form form button {
+            font-size: 14px;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: 400;
+            width: 100%;
+            border: none;
+            padding: 14px 0 12px;
+            background: #f36100;
+        }
+
+        .contact-us-page-map {
+            max-width: 1440px;
+            width: 88%;
+            margin: 0% auto;
+            padding-top: 60px;
+            padding-bottom: 100px;
+        }
+
+        .contact-us-page-map iframe {
+            width: 100%;
+        }
+
+        /* contact-us-page-section end */
+    </style>
+
+</head>
+
+<body>
+
+    <!-- header start  -->
+    <header id="main-header"></header>
+    <!-- header End  -->
+
+    <!-- section One start -->
+    <section class="about-us-page-main aboutpage-banner-class" id="homepage-banner">
+        <h2 class="about-us-page-main-head">Contact Us</h2>
+        <p class="about-us-page-one-links">
+            <a class="about-us-page-home" href="#">Home</a>
+            <span>></span>
+            <a class="about-us-page-home" href="#">Pages</a>
+            <span>></span>
+            <a class="about-us-page-about" href="#">Contact Us</a>
+        </p>
+    </section>
+    <!-- section One End -->
+
+    <!-- contact-us-page-section start -->
+
+    <section class="contact-us-page-section">
+
+        <div class="contact-us-page-width">
+            <div class="contact-us-page-get-in-touch">
+                <div class="contact-get-in-touch-heading">
+                    <p>Contact Us</p>
+                    <h2>GET IN TOUCH</h2>
+                </div>
+                <div class="contact-get-in-touch-location">
+                    <div class="contact-get-in-touch-location-details">
+                        <div class="contact-location-details-inside">
+                            <span class="contact-location-icon"><i class="fa-solid fa-location-dot"></i></span>
+                            <p>333 Middle Winchendon Rd, Rindge, NH 03461</p>
+                        </div>
+                        <div class="contact-location-details-inside">
+                            <span class="contact-location-icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
+                            <p><span>125-711-811</span> <span>|</span> <span>125-668-886</span></p>
+                        </div>
+                        <div class="contact-location-details-inside">
+                            <span class="contact-location-icon"><i class="fa-solid fa-envelope"></i></span>
+                            <p>Support.gymcenter@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-us-page-form">
+                <form action="">
+                    <label for="nameId"></label>
+                    <input type="text" placeholder="Name" id="nameId">
+                    <p class="errorMsg"></p>
+
+                    <label for="emailId"></label>
+                    <input type="text" placeholder="Email" id="emailId">
+                    <p class="errorMsg"></p>
+                    
+                    <label for="phoneId"></label>
+                    <input type="tel" placeholder="Phone No" id="phoneId">
+                    <p class="errorMsg"></p>
+
+                    <label for="commentId"></label>
+                    <textarea placeholder="Comment" id="commentId"></textarea>
+                    <p class="errorMsg"></p>
+
+                    <button type="button" onclick="validation()">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="contact-us-page-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55514.73311922563!2d80.1349553216797!3d29.584179700000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a1253e018b740d%3A0xcc2f9db029049ff!2sBulls%20Gym%20Pithoragarh!5e0!3m2!1sen!2sbd!4v1741606312152!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </section>
+
+    <!-- contact-us-page-section end -->
+
+    <!-- footer start -->
+    <footer id="main-footer"></footer>
+    <!-- footer end -->
+
+
+
+</body>
+
+</html>

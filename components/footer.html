@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <title>Gym Website</title> -->
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- style css -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Oswald;
+        }
+
+        :root {
+            --active-navBar-color: #f36100;
+            --white-color: #fff;
+        }
+
+        /* footer start */
+
+        footer .footer-top {
+            background: #0a0a0a;
+            padding: 30px 0 15px;
+        }
+
+        footer .footer-contacts {
+            max-width: 1440px;
+            width: 87%;
+            margin: 0% auto;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .footer-contact-box {
+            width: 275px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-contact-icon {
+            width: 73px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--active-navBar-color);
+            border-radius: 50%;
+            color: var(--white-color);
+        }
+
+        .footer-contact-icon i {
+            font-size: 30px;
+        }
+
+        .footer-contact-box span {
+            color: var(--white-color);
+            line-height: 1.5;
+            font-weight: 400;
+            font-size: 14px;
+            margin-left: 15px;
+            font-family: 'Muli';
+        }
+
+        .footer-bottom {
+            background: #000000;
+            padding-top: 50px;
+        }
+
+        .footer-details {
+            max-width: 1440px;
+            width: 87%;
+            margin: 0% auto;
+            display: flex;
+            justify-content: space-between;
+
+            border-bottom: 1px solid #1a1a1a;
+            padding-bottom: 50px;
+        }
+
+        .footer-details-box p {
+            color: #c4c4c4;
+            font-size: 14px;
+            font-weight: 400;
+            font-family: 'Muli';
+            margin-top: 20px;
+            width: 320px;
+            line-height: 26px;
+        }
+
+        .footer-details-box-links {
+            display: flex;
+        }
+
+        .footer-details-box-links i {
+            color: #c4c4c4;
+            padding-right: 14px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .footer-useful-links-heading {
+            font-size: 24px;
+            color: #ffffff;
+            font-weight: 600;
+            margin-bottom: 18px;
+            font-family: "Oswald";
+        }
+
+        .footer-useful-links ul {
+            list-style-type: none;
+        }
+
+        .footer-useful-links ul li a {
+            text-decoration: none;
+            color: #c4c4c4;
+            line-height: 30px;
+            font-size: 14px;
+            font-family: 'Muli';
+        }
+
+        .footer-tips-text {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #1a1a1a;
+        }
+
+        .footer-tips-inner-heading {
+            color: #c4c4c4;
+            text-decoration: none;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+
+        .footer-tips-inner-comment {
+            font-size: 12px;
+            color: #4d4d4d;
+            display: inline-block;
+            margin-right: 25px;
+        }
+
+        .footer-tips-inner-comment span {
+            margin-right: 12px;
+        }
+
+        .copyright {
+            max-width: 1440px;
+            width: 87%;
+            margin: 0% auto;
+            overflow-x: hidden;
+        }
+
+        .copyright p {
+            font-size: 12px;
+            color: var(--white-color);
+            padding-top: 30px;
+            padding-bottom: 30px;
+            transform: translateX(50%);
+        }
+
+        /* footer end */
+    </style>
+
+</head>
+
+<body>
+    <!-- footer start -->
+
+    <footer id="main-footer">
+        <div class="footer-top">
+            <div class="footer-contacts">
+                <div class="footer-contact-box">
+                    <div class="footer-contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <span>333 Middle Winchendon Rd, Rindge, NH 03461</span>
+                </div>
+
+                <div class="footer-contact-box">
+                    <div class="footer-contact-icon">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <span>125-711-811</span> <span>|</span>
+                    <span>125-668-886</span>
+                </div>
+
+                <div class="footer-contact-box">
+                    <div class="footer-contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <span>Support.gymcenter@gmail.com</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-details">
+                <div class="footer-details-box">
+                    <img src="../imgs/logo.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore dolore magna aliqua endisse ultrices gravida lorem.</p>
+                    <div class="footer-details-box-links">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                </div>
+                <div class="footer-useful-links">
+                    <p class="footer-useful-links-heading">Useful links</p>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="/classes.html">Classes</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-useful-links">
+                    <p class="footer-useful-links-heading">Support</p>
+                    <ul>
+                        <li><a href="contact.html">Login</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Subscribe</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-useful-links">
+                    <p class="footer-useful-links-heading">Tips & Guides</p>
+                    <div class="footer-tips-text">
+                        <a class="footer-tips-inner-heading" href="#">Physical fitness may help prevent depression,
+                            anxiety</a>
+                        <div class="footer-tips-inner-comment">
+                            <span>3 min read</span> <span>|</span> <span>20 Comment</span>
+                        </div>
+                    </div>
+
+                    <div class="footer-tips-text">
+                        <a class="footer-tips-inner-heading" href="#">Physical fitness may help prevent depression,
+                            anxiety</a>
+                        <div class="footer-tips-inner-comment">
+                            <span>3 min read</span> <span>|</span> <span>20 Comment</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2023. All rights reserved.</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- footer end -->
+
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>our-team-page</title>
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+                <!-- script file -->
+                <script src="script.js" defer></script>
+
+    <!-- style css -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Oswald;
+        }
+
+        :root {
+            --active-navBar-color: #f36100;
+            --white-color: #fff;
+        }
+
+        /* <!-- section One start --> */
+
+.about-us-page-main {
+    background-image: url(../imgs/breadcrumb-bg.jpg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 370px;
+
+            background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+        }
+
+        .about-us-page-main-head {
+            font-size: 60px;
+            color: #ffffff;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .about-us-page-one-links {
+            display: flex;
+        }
+
+        .about-us-page-one-links span {
+            color: #ffffff;
+            font-size: 16px;
+            margin-right: 15px;
+        }
+
+        .about-us-page-home {
+            font-size: 18px;
+            color: #ffffff;
+            font-weight: 700;
+            margin-right: 15px;
+            text-decoration: none;
+            font-family: 'Muli';
+        }
+
+        .about-us-page-about {
+            font-size: 20px;
+            color: var(--active-navBar-color);
+            font-weight: 700;
+            text-decoration: none;
+            font-family: 'Muli';
+        }
+/* <!-- section One End --> */
+
+        /* <!-- section seven start --> */
+
+        .section-seven {
+            background: #151515;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        .section-seven .our-team-all-content {
+            max-width: 1440px;
+            width: 88%;
+            margin: 0 auto;
+        }
+
+        .our-team-header {
+            /* text-align: center; */
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .our-team-header p {
+            font-size: 16px;
+            color: var(--active-navBar-color);
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .our-team-subheading {
+            color: var(--white-color);
+            font-size: 32px;
+            text-transform: uppercase;
+        }
+
+        .our-team-header-button button {
+            border: 2px solid #f36100;
+            font-size: 14px;
+            padding: 17px 30px 16px;
+            color: var(--white-color);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 700;
+            transition: all 0.3s;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        .our-team-header-button button:hover {
+            background: var(--active-navBar-color);
+        }
+
+        .our-team-carousel {
+            /* height: 20rem; */
+            /* width: 100%; */
+
+            overflow: hidden;
+            position: relative;
+        }
+
+        .our-team-img-card {
+            overflow: hidden;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            /* flex-wrap: wrap; */
+        }
+
+        .our-team-img-card img {
+            width: 400px;
+            height: 450px;
+
+            position: relative;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .new-style-o-t {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .o-t-s-img {
+            width: auto !important;
+            height: auto;
+            margin-bottom: 20px;
+            padding-left: 0% !important;
+        }
+
+        /* <!-- section seven end --> */
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- header start  -->
+    <header id="main-header"></header>
+    <!-- header End  -->
+
+    <!-- section One start -->
+    <section class="about-us-page-main aboutpage-banner-class" id="homepage-banner">
+        <h2 class="about-us-page-main-head">Our team</h2>
+        <p class="about-us-page-one-links">
+            <a class="about-us-page-home" href="#">Home</a>
+            <span>></span>
+            <a class="about-us-page-about" href="#">Our team</a>
+        </p>
+    </section>
+    <!-- section One End -->
+
+    <!-- section seven start -->
+
+    <section class="section-seven our-team-section">
+        <div class="our-team-all-content">
+            <div class="our-team-header">
+                <div class="our-team-header-text">
+                    <p>Our Team</p>
+                    <h2 class="our-team-subheading">TRAIN WITH EXPERTS</h2>
+                </div>
+                <div class="our-team-header-button">
+                    <button>Appointment</button>
+                </div>
+            </div>
+
+            <div class="our-team-carousel">
+                <div class="our-team-img-card new-style-o-t">
+                    <div class="our-team-carousel-item">
+                        <img class="o-t-s-img" src="../imgs/team-1.jpg" alt="" />
+                    </div>
+                    <div class="our-team-carousel-item">
+                        <img class="o-t-s-img" src="../imgs/team-2.jpg" alt="" />
+                    </div>
+                    <div class="our-team-carousel-item">
+                        <img class="o-t-s-img" src="../imgs/team-3.jpg" alt="" />
+                    </div>
+                    <div class="our-team-carousel-item">
+                        <img class="o-t-s-img" src="../imgs/team-4.jpg" alt="" />
+                    </div>
+                    <div class="our-team-carousel-item">
+                        <img class="o-t-s-img" src="../imgs/team-5.jpg" alt="" />
+                    </div>
+                    <div class="our-team-carousel-item">
+                        <img class="o-t-s-img" src="../imgs/team-6.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section seven end -->
+
+<!-- footer start -->
+<footer id="main-footer"></footer>
+<!-- footer end -->
+
+
+
+</body>
+
+</html>
