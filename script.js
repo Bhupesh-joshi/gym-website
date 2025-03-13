@@ -246,13 +246,20 @@
 // });
 
 document.addEventListener("DOMContentLoaded", async () => {
+    // Navbar and Footer Load
     document.getElementById("main-header").innerHTML = await (await fetch("./components/nav-bar.html")).text();
     document.getElementById("main-footer").innerHTML = await (await fetch("./components/footer.html")).text();
 
-    document.querySelectorAll('.main-nav-link').forEach(link => {
-        if (link.href.includes(window.location.pathname)) link.classList.add('active');
-    });
+    // 🛠 Ensure navbar links are added before applying active class
+    setTimeout(() => {
+        document.querySelectorAll('.main-nav-link').forEach(link => {
+            if (link.href.includes(window.location.pathname)) {
+                link.classList.add('active');
+            }
+        });
+    }, 100); // 🔹 Small delay to ensure elements are added
 });
+
 
 
 const carouselLeftBtn = document.querySelector('.left-arr-btn');
