@@ -236,14 +236,24 @@
 
 
 
+// document.addEventListener("DOMContentLoaded", async () => {
+//     document.getElementById("main-header").innerHTML = await (await fetch("./components/nav-bar.html")).text();
+//     document.getElementById("main-footer").innerHTML = await (await fetch("./components/footer.html")).text();
+
+//     document.querySelectorAll('.main-nav-link').forEach(link => {
+//         if (link.href.includes(window.location.pathname)) link.classList.add('active');
+//     });
+// });
+
 document.addEventListener("DOMContentLoaded", async () => {
-    document.getElementById("main-header").innerHTML = await (await fetch("./components/nav-bar.html")).text();
-    document.getElementById("main-footer").innerHTML = await (await fetch("./components/footer.html")).text();
+    document.getElementById("main-header").innerHTML = await (await fetch("/gym-website/components/nav-bar.html")).text();
+    document.getElementById("main-footer").innerHTML = await (await fetch("/gym-website/components/footer.html")).text();
 
     document.querySelectorAll('.main-nav-link').forEach(link => {
         if (link.href.includes(window.location.pathname)) link.classList.add('active');
     });
 });
+
 
 const carouselLeftBtn = document.querySelector('.left-arr-btn');
 const carouselRightBtn = document.querySelector('.right-arr-btn');
