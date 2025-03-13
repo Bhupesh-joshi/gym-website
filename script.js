@@ -245,6 +245,7 @@
 //     });
 // });
 
+
 // document.addEventListener("DOMContentLoaded", async () => {
 //     // Fetch and insert Navbar
 //     const header = document.getElementById("main-header");
@@ -257,47 +258,55 @@
 //     const footerResponse = await fetch("./components/footer.html");
 //     footer.innerHTML = await footerResponse.text();
 
-//     // 🛠 Ensure active class is applied after inserting navbar
+//     // ✅ Ensure active class is applied AFTER navbar is inserted
+//     applyActiveNavLink();
+// });
+
+// ✅ Function to apply active class
+// function applyActiveNavLink() {
 //     setTimeout(() => {
 //         document.querySelectorAll(".main-nav-link").forEach(link => {
-//             if (link.href.includes(window.location.pathname)) {
+//             let linkPath = new URL(link.href).pathname;
+//             let currentPath = window.location.pathname;
+
+//             if (linkPath === currentPath) {
 //                 link.classList.add("active");
 //             }
 //         });
-//     }, 10); // Small delay to ensure navbar is rendered
-// });
+//     }, 100); // Small delay to ensure navbar is fully rendered
+// }
+
+
+
+
 
 
 document.addEventListener("DOMContentLoaded", async () => {
     // Fetch and insert Navbar
     const header = document.getElementById("main-header");
     const response = await fetch("./components/nav-bar.html");
-    const navbarHTML = await response.text();
-    header.innerHTML = navbarHTML;
+    header.innerHTML = await response.text();
 
     // Fetch and insert Footer
     const footer = document.getElementById("main-footer");
     const footerResponse = await fetch("./components/footer.html");
     footer.innerHTML = await footerResponse.text();
 
-    // ✅ Ensure active class is applied AFTER navbar is inserted
-    applyActiveNavLink();
-});
-
-// ✅ Function to apply active class
-function applyActiveNavLink() {
+    // 🛠 Ensure active class is applied after inserting navbar
     setTimeout(() => {
-        document.querySelectorAll(".main-nav-link").forEach(link => {
-            let linkPath = new URL(link.href).pathname;
-            let currentPath = window.location.pathname;
+        const currentPath = window.location.pathname.split("/").pop() || "index.html";
 
-            if (linkPath === currentPath) {
+        document.querySelectorAll(".main-nav-link").forEach(link => {
+            let linkPath = link.getAttribute("href").split("/").pop();
+            
+            if (currentPath === linkPath) {
                 link.classList.add("active");
+            } else {
+                link.classList.remove("active");
             }
         });
-    }, 100); // Small delay to ensure navbar is fully rendered
-}
-
+    }, 100);
+});
 
 
 
