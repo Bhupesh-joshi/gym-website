@@ -296,15 +296,23 @@ document.addEventListener("DOMContentLoaded", async () => {
     setTimeout(() => {
         const currentPath = window.location.pathname.split("/").pop() || "index.html";
 
+        let isActiveSet = false; // Flag to check if any nav link is active
+
         document.querySelectorAll(".main-nav-link").forEach(link => {
             let linkPath = link.getAttribute("href").split("/").pop();
             
             if (currentPath === linkPath) {
                 link.classList.add("active");
+                isActiveSet = true; // Mark that at least one active link is set
             } else {
                 link.classList.remove("active");
             }
         });
+
+        // ⚡ If no active link is set, make "Home" active by default
+        if (!isActiveSet) {
+            document.querySelector('.main-nav-link[href="index.html"]')?.classList.add("active");
+        }
     }, 100);
 });
 
