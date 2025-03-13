@@ -246,19 +246,31 @@
 // });
 
 document.addEventListener("DOMContentLoaded", async () => {
-    // Navbar and Footer Load
-    document.getElementById("main-header").innerHTML = await (await fetch("./components/nav-bar.html")).text();
+    // Fetch and Insert Navbar
+    const header = document.getElementById("main-header");
+    header.innerHTML = await (await fetch("./components/nav-bar.html")).text();
+
+    // Fetch and Insert Footer
     document.getElementById("main-footer").innerHTML = await (await fetch("./components/footer.html")).text();
 
-    // 🛠 Ensure navbar links are added before applying active class
-    setTimeout(() => {
+    // 🛠 Function to set active class on navbar links
+    function setActiveNavLink() {
         document.querySelectorAll('.main-nav-link').forEach(link => {
             if (link.href.includes(window.location.pathname)) {
                 link.classList.add('active');
             }
         });
-    }, 100); // 🔹 Small delay to ensure elements are added
+    }
+
+    // Wait until navbar is loaded, then set active class
+    const checkNavbarLoaded = setInterval(() => {
+        if (document.querySelectorAll('.main-nav-link').length > 0) {
+            setActiveNavLink();
+            clearInterval(checkNavbarLoaded); // ✅ Stop checking once applied
+        }
+    }, 100); // 🔹 Check every 100ms until navbar loads
 });
+
 
 
 
