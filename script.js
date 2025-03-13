@@ -246,30 +246,27 @@
 // });
 
 document.addEventListener("DOMContentLoaded", async () => {
-    // Fetch and Insert Navbar
+    // Fetch and insert Navbar
     const header = document.getElementById("main-header");
-    header.innerHTML = await (await fetch("./components/nav-bar.html")).text();
+    const response = await fetch("./components/nav-bar.html");
+    const navbarHTML = await response.text();
+    header.innerHTML = navbarHTML;
 
-    // Fetch and Insert Footer
-    document.getElementById("main-footer").innerHTML = await (await fetch("./components/footer.html")).text();
+    // Fetch and insert Footer
+    const footer = document.getElementById("main-footer");
+    const footerResponse = await fetch("./components/footer.html");
+    footer.innerHTML = await footerResponse.text();
 
-    // 🛠 Function to set active class on navbar links
-    function setActiveNavLink() {
-        document.querySelectorAll('.main-nav-link').forEach(link => {
+    // 🛠 Ensure active class is applied after inserting navbar
+    setTimeout(() => {
+        document.querySelectorAll(".main-nav-link").forEach(link => {
             if (link.href.includes(window.location.pathname)) {
-                link.classList.add('active');
+                link.classList.add("active");
             }
         });
-    }
-
-    // Wait until navbar is loaded, then set active class
-    const checkNavbarLoaded = setInterval(() => {
-        if (document.querySelectorAll('.main-nav-link').length > 0) {
-            setActiveNavLink();
-            clearInterval(checkNavbarLoaded); // ✅ Stop checking once applied
-        }
-    }, 100); // 🔹 Check every 100ms until navbar loads
+    }, 10); // Small delay to ensure navbar is rendered
 });
+
 
 
 
