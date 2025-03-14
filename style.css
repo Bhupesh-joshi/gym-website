@@ -1052,4 +1052,13 @@ i.fa-solid.fa-greater-than.right-arr-btn {
         font-size: 14px;
     }
 
+    .choose-us-icon i {
+        font-size: 30px;
+        color: var(--active-navBar-color);
+    }
+
+    .choose-us-icon i {
+        font-size: 30px;
+    }
+
 }
