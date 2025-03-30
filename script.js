@@ -11,13 +11,14 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // 🛠 Ensure active class is applied after inserting navbar
     setTimeout(() => {
-        const currentPath = window.location.pathname.split("/").pop() || "index.html";
+        const currentPath =
+            window.location.pathname.split("/").pop() || "index.html";
 
         let isActiveSet = false; // Flag to check if any nav link is active
 
-        document.querySelectorAll(".main-nav-link").forEach(link => {
+        document.querySelectorAll(".main-nav-link").forEach((link) => {
             let linkPath = link.getAttribute("href").split("/").pop();
-            
+
             if (currentPath === linkPath) {
                 link.classList.add("active");
                 isActiveSet = true; // Mark that at least one active link is set
@@ -28,18 +29,34 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         // ⚡ If no active link is set, make "Home" active by default
         if (!isActiveSet) {
-            document.querySelector('.main-nav-link[href="index.html"]')?.classList.add("active");
+            document
+                .querySelector('.main-nav-link[href="index.html"]')
+                ?.classList.add("active");
         }
     }, 100);
+
+    // const hamburger = document.querySelector(".hamburger");
+    // const navMenu = document.querySelector(".nav-bar-elements");
+
+    // hamburger.addEventListener("click", function () {
+    //     navMenu.classList.toggle("active");
+    //     hamburger.classList.toggle("active"); // For cross effect
+    // });
+
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-bar-elements");
+
+    hamburger.addEventListener("click", function () {
+        navMenu.classList.toggle("active"); // Navbar को show/hide करने के लिए toggle
+        hamburger.classList.toggle("active"); // Hamburger animation के लिए
+    });
+    
 });
 
-
-
-
-const carouselLeftBtn = document.querySelector('.left-arr-btn');
-const carouselRightBtn = document.querySelector('.right-arr-btn');
-const carouselSlider = document.querySelector('.main-carousel-slider');
-const allCarouselImages = document.querySelectorAll('.main-carousel-img');
+const carouselLeftBtn = document.querySelector(".left-arr-btn");
+const carouselRightBtn = document.querySelector(".right-arr-btn");
+const carouselSlider = document.querySelector(".main-carousel-slider");
+const allCarouselImages = document.querySelectorAll(".main-carousel-img");
 
 let slideNum = 1;
 const carouselLength = allCarouselImages.length;
@@ -76,12 +93,13 @@ const getFirstSlide = () => {
 };
 
 const getLastSlide = () => {
-    carouselSlider.style.transform = `translateX(-${(carouselLength - 1) * 100}%)`;
+    carouselSlider.style.transform = `translateX(-${(carouselLength - 1) * 100
+        }%)`;
     slideNum = carouselLength;
 };
 
-carouselRightBtn.addEventListener('click', nextSlide);
-carouselLeftBtn.addEventListener('click', prevSlide);
+carouselRightBtn.addEventListener("click", nextSlide);
+carouselLeftBtn.addEventListener("click", prevSlide);
 
 function autoSliding() {
     setInterval(() => {

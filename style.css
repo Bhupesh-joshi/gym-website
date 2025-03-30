@@ -6,8 +6,8 @@
 }
 
 :root {
-    --active-navBar-color : #f36100;
-    --white-color : #fff;
+    --active-navBar-color: #f36100;
+    --white-color: #fff;
 }
 
 /* <!-- section one start  --> */
@@ -64,6 +64,7 @@
     color: #fff;
     background-color: var(--active-navBar-color);
 }
+
 .right-arrow-btn-div:hover {
     color: #fff;
     background: var(--active-navBar-color);
@@ -140,7 +141,7 @@ i.fa-solid.fa-greater-than.right-arr-btn {
     margin-bottom: 18px;
 }
 
-.hero-sec-box2 h1{
+.hero-sec-box2 h1 {
     font-size: 80px;
     color: #ffffff;
     font-weight: 700;
@@ -153,7 +154,7 @@ i.fa-solid.fa-greater-than.right-arr-btn {
     color: var(--active-navBar-color);
 }
 
-.hero-section .hero-sec-box2 button{
+.hero-section .hero-sec-box2 button {
     width: 8.5rem;
     height: 3.5rem;
     background-color: var(--active-navBar-color);
@@ -232,7 +233,7 @@ i.fa-solid.fa-greater-than.right-arr-btn {
     transition: all .3s;
 }
 
-.chose-us-card:hover .choose-us-icon{
+.chose-us-card:hover .choose-us-icon {
     color: var(--white-color);
     background-color: var(--active-navBar-color);
 }
@@ -489,7 +490,7 @@ i.fa-solid.fa-greater-than.right-arr-btn {
     align-items: center;
 }
 
-.banner-section h2{
+.banner-section h2 {
     font-size: 48px;
     color: var(--white-color);
     font-weight: 700;
@@ -498,11 +499,11 @@ i.fa-solid.fa-greater-than.right-arr-btn {
 }
 
 .banner-section p {
-        font-size: 20px;
-        color: #c4c4c4;
-        font-weight: 700;
-        text-transform: uppercase;
-        margin-bottom: 45px;
+    font-size: 20px;
+    color: #c4c4c4;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 45px;
 }
 
 .banner-section button {
@@ -599,7 +600,7 @@ i.fa-solid.fa-greater-than.right-arr-btn {
     font-weight: 600;
 }
 
-.our-plan-all-cards .our-plan-single-card .our-plan-text p{
+.our-plan-all-cards .our-plan-single-card .our-plan-text p {
     color: #c4c4c4;
     font-size: 16px;
     font-weight: 700;
@@ -644,14 +645,14 @@ i.fa-solid.fa-greater-than.right-arr-btn {
     position: relative;
     display: flex;
     } */
-    
-    .o-c-dn-icon-inner {
-        display: flex !important;
-        position: absolute;
-        font-size: 3.5rem;
-        color: var(--active-navBar-color);
-        float: left;
-        visibility: hidden;
+
+.o-c-dn-icon-inner {
+    display: flex !important;
+    position: absolute;
+    font-size: 3.5rem;
+    color: var(--active-navBar-color);
+    float: left;
+    visibility: hidden;
 }
 
 .our-plan-single-card:hover .o-c-dn-icon-inner {
@@ -717,10 +718,10 @@ i.fa-solid.fa-greater-than.right-arr-btn {
 
 
 
-    /* <!-- section six end --> */
+/* <!-- section six end --> */
 
 
-    /* <!-- section seven start --> */
+/* <!-- section seven start --> */
 
 .section-seven {
     background: #151515;
@@ -728,10 +729,10 @@ i.fa-solid.fa-greater-than.right-arr-btn {
     padding-bottom: 100px;
 }
 
-.section-seven .our-team-all-content{
-        max-width: 1440px;
-        width: 88%;
-        margin: 0 auto;
+.section-seven .our-team-all-content {
+    max-width: 1440px;
+    width: 88%;
+    margin: 0 auto;
 }
 
 .our-team-header {
@@ -747,7 +748,7 @@ i.fa-solid.fa-greater-than.right-arr-btn {
     text-transform: uppercase;
     font-weight: 700;
 }
-    
+
 .our-team-subheading {
     color: var(--white-color);
     font-size: 32px;
@@ -796,98 +797,98 @@ i.fa-solid.fa-greater-than.right-arr-btn {
     padding-left: 15px;
 }
 
-    /* <!-- section seven end --> */
+/* <!-- section seven end --> */
 
 
-    /* Responsive CSS */
+/* Responsive CSS */
 
-    @media (max-width: 1080px) {
+@media (max-width: 1080px) {
 
-        .chose-us-all-cards {
-            flex-wrap: wrap;
-        }
-        
-        .our-plan-all-cards {
-            /* justify-content: space-around; */
-        }
-
-        .our-plan-single-card {
-            /* margin-top: 20px; */
-        }
-
-        .our-classes-cards {
-            justify-content: space-around;
-        }
-
-        .our-classes-cardSingle {
-            margin-top: 20px;
-        }
-
+    .chose-us-all-cards {
+        flex-wrap: wrap;
     }
 
-    @media (max-width: 800px) {
-        .banner-section h2 {
-            font-size: 30px;
-        }
-
-        .our-classes-big-cards {
-            flex-direction: column;
-            align-content: space-around;
-        }
-
-        .o-c-big-single-card {
-            margin-top: 1.2rem;
-        }
-
-        .image-gallery-all-imgs-one img:nth-child(1) {
-            width: 100%;
-        }
-
-        .image-gallery-all-imgs-one img:nth-child(2) {
-            width: 50%;
-        }
-
-        .image-gallery-all-imgs-one img:nth-child(3) {
-            width: 50%;
-        }
-
-        .section-six {
-            padding: 20px;
-        }
-
-        .image-gallery-all-imgs-two img:nth-child(1) {
-            width: 50%;
-        }
-
-        .image-gallery-all-imgs-two img:nth-child(2) {
-            width: 50%;
-        }
-
-        .image-gallery-all-imgs-two img:nth-child(3) {
-            width: 100%;
-        }
-
-
-        .our-plan-section {
-            padding-bottom: 0;
-        }
-
-        .our-plan-section {
-            margin-top: 0;
-            font-size: 30px !important;
-        }
-
-        .hero-sec-box2 {
-            height: auto;
-            text-align: center;
-        }
-
-        .hero-sec-box2 {
-            font-size: 30px !important;
-        }
-
-        
+    .our-plan-all-cards {
+        /* justify-content: space-around; */
     }
+
+    .our-plan-single-card {
+        /* margin-top: 20px; */
+    }
+
+    .our-classes-cards {
+        justify-content: space-around;
+    }
+
+    .our-classes-cardSingle {
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .banner-section h2 {
+        font-size: 30px;
+    }
+
+    .our-classes-big-cards {
+        flex-direction: column;
+        align-content: space-around;
+    }
+
+    .o-c-big-single-card {
+        margin-top: 1.2rem;
+    }
+
+    .image-gallery-all-imgs-one img:nth-child(1) {
+        width: 100%;
+    }
+
+    .image-gallery-all-imgs-one img:nth-child(2) {
+        width: 50%;
+    }
+
+    .image-gallery-all-imgs-one img:nth-child(3) {
+        width: 50%;
+    }
+
+    .section-six {
+        padding: 20px;
+    }
+
+    .image-gallery-all-imgs-two img:nth-child(1) {
+        width: 50%;
+    }
+
+    .image-gallery-all-imgs-two img:nth-child(2) {
+        width: 50%;
+    }
+
+    .image-gallery-all-imgs-two img:nth-child(3) {
+        width: 100%;
+    }
+
+
+    .our-plan-section {
+        padding-bottom: 0;
+    }
+
+    .our-plan-section {
+        margin-top: 0;
+        font-size: 30px !important;
+    }
+
+    .hero-sec-box2 {
+        height: auto;
+        text-align: center;
+    }
+
+    .hero-sec-box2 {
+        font-size: 30px !important;
+    }
+
+
+}
 
 @media (max-width: 425px) {
 
@@ -898,16 +899,16 @@ i.fa-solid.fa-greater-than.right-arr-btn {
     .hero-sec-box2 p {
         margin: 0;
     }
-    
+
     .hero-sec-box1 {
         display: none;
     }
 
     .hero-sec-box2 {
         align-items: center;
-        margin-top: 25px;   
+        margin-top: 25px;
     }
-    
+
     .hero-sec-box2 h1 {
         font-size: 16px;
         margin-bottom: 0;
@@ -960,7 +961,7 @@ i.fa-solid.fa-greater-than.right-arr-btn {
         font-size: 18px;
         margin-bottom: 15px;
     }
-    
+
     .banner-section p {
         font-size: 14px;
         margin-bottom: 25px;
@@ -973,21 +974,21 @@ i.fa-solid.fa-greater-than.right-arr-btn {
 
     .our-plan-section {
         padding-top: 25px;
- }
+    }
 
- .our-plan-all-cards {
-    margin-top: 30px;
- }
+    .our-plan-all-cards {
+        margin-top: 30px;
+    }
 
- .section-seven {
-    padding-top: 25px;
-    padding-bottom: 25px;
- }
+    .section-seven {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
 
- .our-plan-enroll-btn {
-    font-size: 14px;
-    padding: 7px 20px 7px;
- }
+    .our-plan-enroll-btn {
+        font-size: 14px;
+        padding: 7px 20px 7px;
+    }
 
     i.fa-solid.fa-image.o-c-dn-icon-inner {
         font-size: 35px;
@@ -1032,7 +1033,7 @@ i.fa-solid.fa-greater-than.right-arr-btn {
     }
 
     .our-team-subheading {
-    font-size: 16px;
+        font-size: 16px;
     }
 
     .our-team-header p {

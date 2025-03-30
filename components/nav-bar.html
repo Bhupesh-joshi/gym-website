@@ -65,7 +65,7 @@
             font-weight: 500;
             color: var(--white-color) !important;
             position: relative;
-            transition: all .4s;
+            transition: all 0.4s;
         }
 
         .nav-bar-elements .nav-bar-main-ul li a:hover {
@@ -142,26 +142,124 @@
             opacity: 1;
         }
 
-
         /* responsive css */
+
+        /* Mobile view */
         @media (max-width: 1080px) {
-            .nav-bar-elements {
-                display: none;
-            }
-            
-            .nav-bar-icons { 
+
+            .nav-bar-icons {
                 display: none !important;
             }
 
+            /* .hamburger {
+                display: block;
+                cursor: pointer;
+                z-index: 999;
+                transition: transform 0.4s, opacity 0.4s;
+            } */
+
+            .hamburger {
+                display: block;
+                cursor: pointer;
+                z-index: 1000;
+                position: relative;
+            }
+
+            /* .hamburger .line {
+                width: 30px;
+                height: 3px;
+                background: #fefefe;
+                margin: 6px 0;
+            } */
+
+            .hamburger .line {
+                width: 30px;
+                height: 3px;
+                background: #fefefe;
+                margin: 6px 0;
+                transition: transform 0.4s, opacity 0.4s;
+            }
+
+            /* Cross effect */
+            /* .hamburger.active .line:nth-child(1) {
+                transform: translateY(9px) rotate(45deg);
+            }
+
+            .hamburger.active .line:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active .line:nth-child(3) {
+                transform: translateY(-9px) rotate(-45deg);
+            } */
+
+            /* Cross effect */
+            .hamburger.active .line:nth-child(1) {
+                transform: translateY(9px) rotate(45deg);
+            }
+
+            .hamburger.active .line:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active .line:nth-child(3) {
+                transform: translateY(-9px) rotate(-45deg);
+            }
+
+            /* Transition for menu */
+            .nav-bar-elements {
+                transition: all 0.4s ease-in-out;
+            }
+
+            /* .nav-bar-elements {
+                display: none;
+                position: absolute;
+                top: 100px;
+                left: 0;
+                background: #040000;
+                text-align: center;
+                padding: 20px 0;
+                z-index: 999;
+                width: 60%;
+            } */
+
+            .nav-bar-elements {
+                position: fixed;
+                top: 100px;
+                left: -100%;
+                width: 60%;
+                height: 100vh;
+                background: #040000;
+                text-align: center;
+                padding: 20px 0;
+                z-index: 999;
+                transition: all 0.4s ease-in-out;
+                opacity: 0;
+            }
+
+            /* .nav-bar-elements.active {
+                display: block;
+            } */
+
+            .nav-bar-elements.active {
+                left: 0;
+                opacity: 1;
+            }
+
+            .nav-bar-elements .nav-bar-main-ul {
+                flex-direction: column;
+                width: 100% !important;
+                gap: 15px;
+            }
+
+            .nav-bar-elements .nav-bar-main-ul li {
+                margin-bottom: 10px;
+            }
         }
-
-
     </style>
-
 </head>
 
 <body>
-
     <!-- navbar start -->
 
     <header id="main-header" class="nav-bar-header">
@@ -172,9 +270,13 @@
 
             <div class="nav-bar-elements">
                 <ul class="nav-bar-main-ul">
-                    <li><a class="main-nav-link" href="index.html">Home</a></li>
-                    <li><a class="main-nav-link" href="about.html" class="">About us</a></li>
-                    <li><a class="main-nav-link" href="classes.html" class="">Classes</a></li>
+                    <li><a class="main-nav-link active" href="index.html">Home</a></li>
+                    <li>
+                        <a class="main-nav-link" href="about.html" class="">About us</a>
+                    </li>
+                    <li>
+                        <a class="main-nav-link" href="classes.html" class="">Classes</a>
+                    </li>
                     <li><a class="main-nav-link" href="services.html">Services</a></li>
                     <li><a class="main-nav-link" href="our-team.html">Our team</a></li>
                     <li class="pages-li-item">
@@ -200,11 +302,17 @@
                 <span><a href="#"><i class="fa-brands fa-youtube"></i></a></span>
                 <span><a href="#"><i class="fa-brands fa-instagram"></i></a></span>
             </div>
+
+            <!-- Hamburger Icon -->
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </nav>
     </header>
 
     <!-- navbar end -->
-
 </body>
 
 </html>
