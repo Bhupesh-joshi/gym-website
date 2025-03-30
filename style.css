@@ -476,9 +476,9 @@ i.fa-solid.fa-greater-than.right-arr-btn {
 /* <!-- section Four start --> */
 
 .banner-section {
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
+    /* max-width: 1440px; */
+    /* width: 100%; */
+    /* margin: 0 auto; */
     background-image: url(imgs/banner-bg.jpg);
     height: 550px;
     background-repeat: no-repeat;
@@ -665,9 +665,9 @@ i.fa-solid.fa-greater-than.right-arr-btn {
 /* <!-- section six start --> */
 
 .section-six {
-    max-width: 1440px;
+    /* max-width: 1440px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto; */
     background: #151515;
 }
 
